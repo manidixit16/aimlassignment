@@ -8,6 +8,26 @@ on red vs white wine quality prediction, per the assignment brief (Section 1 + T
 - `Wine_Quality_Comparative_Study_Mani_PGDSAI3.ipynb` — full notebook: Section 1 + Tasks 1–7, executed with all outputs shown
 - `winequality-red.csv` — red wine dataset (1,599 samples)
 - `winequality-white.csv` — white wine dataset (4,898 samples)
+- `requirements.txt` — Python dependencies
+
+## Dataset
+
+Each row is one wine sample described by 11 lab-measured numeric features — fixed
+acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide,
+total sulfur dioxide, density, pH, sulphates, and alcohol — plus the integer `quality`
+rating used as the multi-class target.
+
+## How to Run
+
+```bash
+git clone https://github.com/manidixit16/aimlassignment.git
+cd aimlassignment
+pip install -r requirements.txt
+jupyter notebook Wine_Quality_Comparative_Study_Mani_PGDSAI3.ipynb
+```
+
+The notebook runs top-to-bottom with no manual steps; both CSV files are read from the
+repository root. Results are fully reproducible (`random_state=42` everywhere).
 
 ## Method (fixed across both datasets for a fair comparison)
 
